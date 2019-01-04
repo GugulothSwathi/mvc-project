@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableData_Datecal", "TableData_Datecal\TableData_Datecal.csproj", "{A23D8A7C-D6A0-4CAB-BAB9-20D60F53460F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A23D8A7C-D6A0-4CAB-BAB9-20D60F53460F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23D8A7C-D6A0-4CAB-BAB9-20D60F53460F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23D8A7C-D6A0-4CAB-BAB9-20D60F53460F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23D8A7C-D6A0-4CAB-BAB9-20D60F53460F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08858CA1-B00D-478F-AAFD-569E41BF0515}
+	EndGlobalSection
+EndGlobal
