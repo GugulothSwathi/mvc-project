@@ -1,0 +1,78 @@
+﻿@model IEnumerable<TableData_Datecal.Models.TableData>
+@using TableData_Datecal.Models
+@{
+    ViewBag.Title = "Create";
+}
+@Html.Partial("_PartialView")
+<div class="container-fluid">
+<div class="row" style="margin-top:30px">
+    <div class="col-lg-6" style="color:blue">
+
+
+        @using (@Html.BeginForm("Index", "Table_Datecal", FormMethod.Post))
+        {
+
+            <table class="table table-bordered" style="background-color:gainsboro">
+                <tr>
+                    <td>
+                        @Html.LabelFor(M => M.FirstOrDefault().First_Date)
+                    </td>
+                    @*<td>@Html.TextBoxFor(m => m.FirstOrDefault().First_Date)<br /></td>*@
+                    <td>@Html.TextBox("First_Name"," ")<br /></td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.FirstOrDefault().Second_Date)</td>
+                    <td>@*@Html.TextBoxFor(m => m.FirstOrDefault().Second_Date)<br />*@ @Html.TextBox("Second_Name"," ")</td>
+                </tr> 
+               @* <tr>
+                        <td>@Html.LabelFor(m => m.FirstOrDefault().Result)</td>
+                        <td><label>@ViewBag.Result</label></td>
+                    </tr>*@
+                <tr>
+                    <td> <input type="submit" value="submit" name="submit" style="color:brown" size="1000" height="50" width="200" /></td>
+                    <td></td>
+                </tr>
+            </table>
+        }
+    </div>
+ 
+    <div class="col-lg-6" style="color:blueviolet">
+        <div class="bg-danger">
+            <table class="table table-bordered">
+
+                <thead>
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+
+                        <th>
+                            First_Date
+                        </th>
+                        <th>
+                            Second_Date
+                        </th>
+                        <th>
+                            Result
+                        </th>
+
+
+                    </tr>
+                </thead>
+                @foreach (var i in ViewBag.displaydata)
+                {
+                    <tr>
+                        <td>@i.Id</td>
+                        <td>@i.First_Date</td>
+                        <td>@i.Second_Date</td>
+                        <td>@i.Result</td>
+                    </tr>
+
+                }
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+
